@@ -12,11 +12,12 @@
 </head>
 <body onload="init();">
 <h1>Création de ville</h1>
-<form name="newCityForm" action="create" method="post">
+<form name="newCityForm" action="new" method="post">
     <label for="city">Nom</label>
     <input type="text" name="city" id="city" />
     <label for="Pays">Pays</label>
     <input type="text" name="Pays" id="Pays" />
+    <input type="hidden" name="id" id="id" value="11L"/>
     <input type="submit" value="Créer" />
 </form>
 

@@ -31,8 +31,7 @@ public class NewCityController {
     }
 
     @GetMapping("/new")
-    public String newCity(CityService city) {
-        city.create(new City());
+    public String newCity() {
         return "newcity";
     }
 
