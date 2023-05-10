@@ -15,9 +15,7 @@
 <form name="newCityForm" action="new" method="post">
     <label for="city">Nom</label>
     <input type="text" name="city" id="city" />
-    <label for="country">Pays</label>
-    <input type="text" name="country" id="country" />
-    <input type="hidden" name="country_id" id="country_id" value="11L"/>
+    <input type="hidden" name="country_id" id="country_id" value="10L"/>
     <input type="submit" value="Créer" />
 </form>
 

@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,11 +37,11 @@ public class NewCityController {
     }
 
     @RequestMapping(value = "/new", method = org.springframework.web.bind.annotation.RequestMethod.POST)
-    public String create(@ModelAttribute("newCityForm") City city, BindingResult bindingResult, ModelMap model) {
-
+    public String create(@Validated @ModelAttribute("newCityForm") City city, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            return "error";
+            return "newcity";
         }
+
         service.create(city);
         return "redirect:/cities";
     }
