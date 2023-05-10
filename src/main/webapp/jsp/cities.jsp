@@ -24,7 +24,7 @@
     <br>
     <a href="<c:url value="/"/>" class="w3-button w3-black">Retour</a>
     Recherche : <input type="text" id="search" onkeyup="search()" placeholder="Search for countries..">
-    <a href="<c:url value="/newcity/"/>" class="w3-button w3-black">New</a>
+    <a href="/jee-mvc/new" class="w3-button w3-black">New</a>
     <table id="countriesTable" class="w3-centered w3-table-all">
         <thead>
         <tr class="w3-light-grey">
