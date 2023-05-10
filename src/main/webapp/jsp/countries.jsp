@@ -29,7 +29,7 @@
 	<div class="w3-container">
 		<h2 style="text-align: center">Sakila - countries</h2>
 		<br>
-		<button onclick="<c:url value="/" />" >Retour</button>
+		<a href="<c:url value="/"/>" class="w3-button w3-black">Retour</a>
 
 		<table id="countriesTable" class="w3-centered w3-table-all">
 			<thead>

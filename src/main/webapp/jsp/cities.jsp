@@ -22,8 +22,9 @@
 <div class="w3-container">
     <h2 style="text-align: center">Sakila - cities</h2>
     <br>
-    <button onclick="<c:url value="/" />" >Retour</button>
+    <a href="<c:url value="/"/>" class="w3-button w3-black">Retour</a>
     Recherche : <input type="text" id="search" onkeyup="search()" placeholder="Search for countries..">
+    <a href="<c:url value="/newcity/"/>" class="w3-button w3-black">New</a>
     <table id="countriesTable" class="w3-centered w3-table-all">
         <thead>
         <tr class="w3-light-grey">
