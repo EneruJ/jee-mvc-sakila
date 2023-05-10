@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 public class NewCityController {
 
@@ -31,9 +30,9 @@ public class NewCityController {
     }
 
     @GetMapping("/newcity")
-    public ModelAndView newCity(CityService city) {
+    public String newCity(CityService city) {
         city.create(new City());
-        return new ModelAndView("newcity", "newCityForm", city);
+        return "newcity";
     }
 
     @RequestMapping(value = "/newcity", method = org.springframework.web.bind.annotation.RequestMethod.POST)
